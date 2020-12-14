@@ -56,7 +56,7 @@ nav ul > li:hover span {
     color: #555C6E;
 }
 
-nav ul li div {
+.hover {
     width: 40px;
     height: 40px;
     border-radius: 50%;
