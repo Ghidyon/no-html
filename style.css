@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+}
+
+nav {
+    width: 100%;
+    background: #F0F1F6;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2.3rem 2rem 2.3rem;
+    cursor: pointer;
+}
+
+nav ul > li:hover {
+    background: #E5E4EA;
+}
+
+nav ul > li:hover span {
+    color: #555C6E;
+}
+
+.active {
+    margin-top: -.75rem;
+    background: #E5E4EA;
+}
+
+.active span {
+    color: #555C6E;
+}
+
+nav ul li div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #555C6E;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li span {
+    font-size: 18px;
+    color: #C6C9CE;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: .5rem;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+section aside {
+    width: 30%;
+    background: #555C6E;
+    height: 450px;
+    padding: 3rem 3.5rem;
+    color: #B0B7C9;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+section aside h1, section article h1:last-of-type {
+    margin-bottom: 1.2rem;
+}
+
+p {
+    font-family: Raleway;
+    line-height: 1.5;
+}
+
+section aside img {
+    width: 16px;
+    height: 16px;
+    margin-right: .5rem;
+    margin-top: 2rem;
+}
+
+section article {
+    width: 70%;
+    height: 450px;
+    background: #00BDBF;
+    color: white;
+    display: flex;
+    padding: 3rem 4rem;
+    justify-content: center;
+}
+
+section article > div:first-of-type > p {
+    margin-bottom: 1rem;
+}
+
+section article > div:first-of-type > p:last-of-type {
+    margin-bottom: 0;
+}
+
+section article div:last-of-type {
+    align-self: center;
+    padding-left: 2rem;
+    padding-top: .8rem;
+}
+
+section article:last-child img {
+    outline: 7px solid white;
+    height: 250px;
+    width: 210px;
+}
