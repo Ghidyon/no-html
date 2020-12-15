@@ -24,7 +24,6 @@ navItems.forEach(item => {
 
 ul.querySelector('li').classList.add('active');
 ul.querySelector('div').classList.add('hover');
-// console.log(ul.querySelector('li'))
 
 // Creating body section 
 const aside = document.createElement('aside');
